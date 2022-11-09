@@ -11,6 +11,7 @@ import Link from "next/link";
 import Head from "next/head";
 import PokemonProfile from "../../components/PokemonProfile";
 import PokemonMoves from "../../components/PokemonMoves";
+import Footer from "../../components/Footer";
 
 export async function getServerSideProps(context: any) {
   const name = context.params.name as string;
@@ -59,6 +60,7 @@ function Details() {
           </>
         )}
       </Box>
+      <Footer />
     </>
   );
 }
